@@ -1,2 +1,2 @@
-# robot
-autonomous robot utilizing ROS2 and Open CV
+# General purpose robot
+Autonomous robot utilizing ROS2 and Open CV.
