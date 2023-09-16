@@ -17,4 +17,4 @@ A custom msg interface used for publishing/subscribing ultrasonic sensor data.
 The main package contains all of the ROS2 nodes created for running the different robotic components and sharing data between them.
 
 # Robot Bringup
-This file allows us do start up the robot using only a single terminal command.
+This file allows us to start up the robot using only a single terminal command.
