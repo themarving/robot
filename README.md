@@ -18,3 +18,6 @@ The main package contains all of the ROS2 nodes created for running the differen
 
 # Robot Bringup
 This file allows us to start up the robot using only a single terminal command.
+
+# Robot Description
+This folder contains the robot description as a URDF file extended with ROS2's XACRO XML extension. Also included is a launch file for easy visualization and robot state/joint state publishing.
