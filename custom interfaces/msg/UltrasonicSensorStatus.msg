@@ -1,0 +1,3 @@
+int64 left_sensor
+int64 right_sensor
+int64 back_sensor
