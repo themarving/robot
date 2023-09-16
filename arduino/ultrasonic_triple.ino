@@ -14,7 +14,7 @@ const int RASP_PI_OUT_BACK = 12;
 
 const int PROXIMITY_ALERT_DISTANCE = 10;
 
-const int PULSE_RATE = 1000;
+const int PULSE_RATE = 100;
 
 void setup() {
   // setting triggers as output pins
