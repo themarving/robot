@@ -1,4 +1,4 @@
-# General purpose robot
+# General Purpose Robot
 Autonomous robot utilizing ROS2 and Open CV.
 
 # Arduino
