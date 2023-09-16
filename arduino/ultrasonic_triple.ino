@@ -31,9 +31,6 @@ void setup() {
   pinMode(RASP_PI_OUT_LEFT, OUTPUT);
   pinMode(RASP_PI_OUT_RIGHT, OUTPUT);
   pinMode(RASP_PI_OUT_BACK, OUTPUT);
-
-  // serial output (max 115200)
-  Serial.begin(9600);
 }
 
 void loop() {
