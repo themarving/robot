@@ -11,7 +11,7 @@ Raspberry Pi 4b, Arduino Uno Rev3, Arduino Nano Every, LD19 360 degrees 2D Lidar
 The two arduino code files are implemented on the Arduino Uno and the Arduino Nano respectively.
 
 # Custom Interfaces
-A custom msg interface used for publishing/subscribing ultrasonic sensor data.
+A custom msg interface used for publishing/subscribing ultrasonic sensor data and computer vision data.
 
 # Main Package
 The main package contains all of the ROS2 nodes created for running the different robotic components and sharing data between them.
