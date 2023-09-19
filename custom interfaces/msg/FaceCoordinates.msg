@@ -1,0 +1,2 @@
+int64 face_x_coordinate
+int64 face_y_coordinate
