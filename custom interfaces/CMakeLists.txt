@@ -14,6 +14,7 @@ find_package(rosidl_default_generators REQUIRED)
 # creating source code from message
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/UltrasonicSensorStatus.msg"
+  "msg/FaceCoordinates.msg"
 )
 
 ament_export_dependencies(rosidl_default_runtime)
