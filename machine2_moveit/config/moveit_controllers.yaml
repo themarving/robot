@@ -1,0 +1,15 @@
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - leg_controller
+
+  # FollowJointTrajectory OR GripperCommand
+  leg_controller:
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - shoulder_y_axis_joint
+      - shoulder_x_axis_joint
+      - knee_joint

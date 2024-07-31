@@ -1,0 +1,26 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 10  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    leg_controller:
+      # self defined controller machine_controller/MachineController
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+leg_controller:
+  ros__parameters:
+    joints:
+      - shoulder_y_axis_joint
+      - shoulder_x_axis_joint
+      - knee_joint
+
+    command_interfaces:
+      - position
+      - velocity
+
+    state_interfaces:
+      - position
+      - velocity

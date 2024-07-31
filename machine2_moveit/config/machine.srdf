@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="machine2">
+    <!-- NAME: leg -> used in kinematics.yaml -->
+    <group name="leg">
+        <joint name="virtual_joint"/>
+
+        <!-- fixed -->
+        <joint name="shoulder_joint"/>
+
+        <!-- revolute -->
+        <joint name="shoulder_y_axis_joint"/>
+        <joint name="shoulder_x_axis_joint"/>
+        <joint name="knee_joint"/>
+    </group>
+
+    <group_state name="home" group="leg">
+        <joint name="shoulder_y_axis_joint" value="0"/>
+        <joint name="shoulder_x_axis_joint" value="0"/>
+        <joint name="knee_joint" value="0"/>
+    </group_state>
+
+    <!-- collisions -->
+    <disable_collisions default="true" reason="All links"/>
+    <!-- <disable_collision link1="base_link" link2="shoulder_link" reason="Adjacent"/>
+    <disable_collision link1="base_link" link2="shoulder_y_link" reason="Never"/>
+
+    <disable_collision link1="shoulder_link" link2="shoulder_y_link" reason="Never"/>
+    <disable_collision link1="shoulder_link" link2="shoulder_x_link" reason="Never"/>
+    <disable_collision link1="shoulder_link" link2="knee_link" reason="Never"/>
+
+    <disable_collision link1="shoulder_y_link" link2="shoulder_x_link" reason="Never"/>
+    <disable_collision link1="shoulder_y_link" link2="knee_link" reason="Never"/>
+
+    <disable_collision link1="shoulder_x_link" link2="shoulder_y_link" reason="Never"/>
+    <disable_collision link1="shoulder_x_link" link2="knee_link" reason="Never"/>
+
+    <disable_collision link1="knee_link" link2="shoulder_y_link" reason="Never"/>
+    <disable_collision link1="knee_link" link2="shoulder_x_link" reason="Never"/> -->
+</robot>

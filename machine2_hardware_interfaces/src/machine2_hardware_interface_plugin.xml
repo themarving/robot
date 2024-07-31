@@ -1,0 +1,15 @@
+<!-- The plugin description file is a required XML file that describes 
+    a plugin's library name, class type, namespace, description, and 
+    interface type. This file allows the ROS 2 to automatically discover 
+    and load plugins. -->
+
+<library path="machine2_hardware_interfaces">
+    <class
+        name="machine_hardware_interface/MachineSystem"
+        type="machine_hardware_interface::MachineSystem"
+        base_class_type="hardware_interface::SystemInterface">
+        <description>
+            Machine Hardware Interface
+        </description>
+    </class>
+</library>

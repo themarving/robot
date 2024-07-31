@@ -1,0 +1,15 @@
+<!-- The plugin description file is a required XML file that describes 
+    a plugin's library name, class type, namespace, description, and 
+    interface type. This file allows the ROS 2 to automatically discover 
+    and load plugins. -->
+
+<library path="machine2_controllers">
+    <class
+        name="machine_controller/MachineController"
+        type="machine_controller::MachineController"
+        base_class_type="controller_interface::ControllerInterface">
+        <description>
+            Machine Controller
+        </description>
+    </class>
+</library>
